@@ -104,7 +104,8 @@ public class Paciente {
         System.out.println("Nombre: " + getNombre());
         System.out.println("Apellido: " + getApellido());
         System.out.println("Tipo de Seguro medico: " + getTipoSeguro());
-        System.out.println("IMC: " + getImc());
+        System.out.printf("IMC: %.4f kg/m2", getImc() );
+        System.out.println();
         System.out.println("Estado: " + getEstado());
         System.out.println("*-------------------------------------------*");
 

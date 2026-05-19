@@ -10,17 +10,25 @@ public class Main{
         
         do{
 
-            System.out.println("--------------------------------------------");
-            System.out.println("|                     MENU                 |");
-            System.out.println("--------------------------------------------");
-            System.out.println("| 1.Registrar paciente                     |");
-            System.out.println("| 2.Mostrar informacion de pacientes       |");
-            System.out.println("| 3.Mostrar los pacientes registrados      |");
-            System.out.println("| 4.Salir                                  |");
+            System.out.println("---------------------------------------------");
+            System.out.println("|                     MENU                  |");
+            System.out.println("---------------------------------------------");
+            System.out.println("| 1.Registrar paciente                      |");
+            System.out.println("| 2.Mostrar informacion de pacientes        |");
+            System.out.println("| 3.Mostrar todos los pacientes registrados |");
+            System.out.println("| 4.Salir                                   |");
             System.out.println("--------------------------------------------");
             System.out.println("\nIngrese la opcion que desea seleccionar: ");
-            opcion = scanner.nextInt();
-            scanner.nextLine();
+            
+            try{
+                opcion = scanner.nextInt();
+                scanner.nextLine();
+            }
+            catch(Exception e){
+                System.out.println("ERROR! Ingrese un numero del menu!");
+                scanner.nextLine();
+                opcion = 0;
+            }
 
             switch(opcion){
                 case 1:{
