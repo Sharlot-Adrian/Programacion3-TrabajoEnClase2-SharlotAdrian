@@ -5,10 +5,17 @@ public class Paciente {
     private String tipoSeguro;
     private double peso;
     private double altura;
+
     private double imc;
     private String estado;
 
-    public Paciente(){
+    public Paciente(String nombre, String apellido, String tipoSeguro, double peso, double altura){
+        setNombre(nombre);
+        setApellido(apellido);
+        setTipoSeguro(tipoSeguro);
+        setPeso(peso);
+        setAltura(altura);
+        
 
     }
 
@@ -67,6 +74,8 @@ public class Paciente {
     public void setEstado(String estado){
         this.estado = estado;
     }
+
+    private voi
 
 
 
