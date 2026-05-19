@@ -51,8 +51,6 @@ public class Main{
                     double altura = scanner.nextDouble();
                     scanner.nextLine();
 
-                    System.out.println("*-------------------------------------------*");
-
                     menuPaciente.agregarPaciente(nombre, apellido, tipoSeguro, peso, altura);
                     break;
 
@@ -86,5 +84,7 @@ public class Main{
             }
 
         }while(opcion !=4);
+
+        scanner.close();
     }
 }
