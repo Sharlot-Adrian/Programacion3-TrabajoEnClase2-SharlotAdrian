@@ -15,8 +15,10 @@ public class Paciente {
         setTipoSeguro(tipoSeguro);
         setPeso(peso);
         setAltura(altura);
-        
 
+        setImc(calcularImc(peso, altura));
+        setEstado(determinarEstado(getImc()));
+  
     }
 
     public String getNombre(){
@@ -75,7 +77,23 @@ public class Paciente {
         this.estado = estado;
     }
 
-    private voi
+    private double calcularImc(double peso, double altura){
+        double resultado = peso / altura;
+        return resultado;
+    }
+
+    private String determinarEstado(double imc){
+
+        if (imc < 18.5)
+            return "Peso Bajo";
+        else if (imc >= 18.5 && imc <= 24.9)
+            return "Normal";
+        else if (imc >= 25.00 && imc <= 29.90)
+            return "SobrePeso";
+        else 
+            return "indeterminado";
+
+    }
 
 
 
