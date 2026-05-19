@@ -78,7 +78,7 @@ public class Paciente {
     }
 
     private double calcularImc(double peso, double altura){
-        double resultado = peso / altura;
+        double resultado = peso / (altura * altura);
         return resultado;
     }
 
@@ -90,8 +90,23 @@ public class Paciente {
             return "Normal";
         else if (imc >= 25.00 && imc <= 29.90)
             return "SobrePeso";
-        else 
+        else if (imc >= 30)
+            return "Obesidad";
+        else
             return "indeterminado";
+        
+
+    }
+
+    public void MostrarInfoPersonal(){
+        System.out.println("\n[INFORMACION DEL PACIENTE: " + getNombre());
+        System.out.println("*-------------------------------------------*");
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Apellido: " + getApellido());
+        System.out.println("Tipo de Seguro medico: " + getTipoSeguro());
+        System.out.println("IMC: " + getImc());
+        System.out.println("Estado: " + getEstado());
+        System.out.println("*-------------------------------------------*");
 
     }
 
