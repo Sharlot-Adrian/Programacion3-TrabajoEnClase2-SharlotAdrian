@@ -11,7 +11,7 @@ Materia:
 Programación 3
 
 Descripción:
-Conjunto de ejercicios realizado en clases.
+Conjunto de ejercicios realizados en clases.
 
 Tecnologías utilizadas:
 Java y Visual Studio Code
