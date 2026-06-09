@@ -15,7 +15,8 @@ public class RegistroEstudiantes {
             System.out.println("1. Agregar estudiante  ");
             System.out.println("2. Mostrar estudiantes  ");
             System.out.println("3. Salir               ");
-            System.out.println("Ingrese la opcion que desea seleccionar: ");
+            System.out.println("=======================");
+            System.out.println("\nIngrese la opcion que desea seleccionar: ");
 
             opcion = scanner.nextInt();
             scanner.nextLine();
