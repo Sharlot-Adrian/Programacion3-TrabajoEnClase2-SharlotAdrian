@@ -1,0 +1,8 @@
+JP1000;Juan Perez;5612345671;8496294567;Doctor Mario bro;Cardiologia;2026-07-14;2 P.M.;Taquicardia;Programada
+JP1001;Juan Peralta;05612345671;8496432345;Doctor Maria Lopez;Neumologia;2026-07-16;3 P.M.;Neumonia;Programada
+MD1234;Maria Duarte;05678612341;8498702363;Doctor House;Cardiologia;2026-07-14;4 P.M.;Presion Baja;Programada
+FP123678;Fernanda Paredes;05687978902;8498799078;Doctor Maria Lopez;Neumologia;2026-07-17;4 P.M.;Bronquitis;Programada
+FG234567;Felipe Guzman;05678978901;8293456543;Doctor Mario bro;Cardiologia;2026-07-23;6 P.M.;Presion Alta;Programada
+JP1000;Juan Perez;5612345671;8496294567;Doctor Mario bro;Cardiologia;2026-07-14;2 P.M.;Taquicardia;Cancelada
+JP1000;Juan Perez;5612345671;8496294567;Doctor Mario bro;Cardiologia;2026-07-14;2 P.M.;Taquicardia;Cancelada
+JP1000;Juan Perez;5612345671;8496294567;Doctor Mario bro;Cardiologia;2026-07-14;2 P.M.;Taquicardia;Cancelada

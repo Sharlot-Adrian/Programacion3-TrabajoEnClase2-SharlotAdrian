@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerPrincipal">
+   <children>
+      <Text fx:id="txtTitulo" layoutX="247.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema básico de citas médicas">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCodigo" layoutX="77.0" layoutY="87.0" text="Codigo" />
+      <TextField fx:id="tfCodigo" layoutX="24.0" layoutY="106.0" />
+      <Label fx:id="lblPaciente" layoutX="74.0" layoutY="141.0" text="Paciente" />
+      <TextField fx:id="tfPaciente" layoutX="22.0" layoutY="158.0" />
+      <Label fx:id="lblCedula" layoutX="74.0" layoutY="192.0" text="Cedula" />
+      <TextField fx:id="tfCedula" layoutX="22.0" layoutY="209.0" />
+      <Label fx:id="lblTelefono" layoutX="257.0" layoutY="87.0" text="Telefono" />
+      <TextField fx:id="tfTelefono" layoutX="206.0" layoutY="106.0" />
+      <Label fx:id="lblHora" layoutX="271.0" layoutY="141.0" text="Hora" />
+      <TextField fx:id="tfHora" layoutX="209.0" layoutY="158.0" />
+      <Label fx:id="lblMedico" layoutX="264.0" layoutY="192.0" text="Medico" />
+      <ComboBox fx:id="cmbxMedico" layoutX="205.0" layoutY="209.0" prefWidth="150.0" />
+      <Label fx:id="lblEspecialidad" layoutX="452.0" layoutY="87.0" text="Especialidad" />
+      <ComboBox fx:id="cmbxEspecialidad" layoutX="410.0" layoutY="106.0" prefWidth="150.0" />
+      <Label fx:id="lblEstado" layoutX="465.0" layoutY="141.0" text="Estado" />
+      <ComboBox fx:id="cmbxEstado" layoutX="410.0" layoutY="158.0" prefWidth="150.0" />
+      <TextArea fx:id="txtAreaMotivo" layoutX="596.0" layoutY="100.0" prefHeight="37.0" prefWidth="157.0" />
+      <Label fx:id="lblMotivo" layoutX="655.0" layoutY="84.0" text="Motivo" />
+      <Button fx:id="bttRegistrar" layoutX="199.0" layoutY="256.0" mnemonicParsing="false" onAction="#Registrar" text="Registrar" />
+      <Button fx:id="bttCancelar" layoutX="296.0" layoutY="256.0" mnemonicParsing="false" onAction="#Cancelar" text="Cancelar" />
+      <Button fx:id="bttLimpiar" layoutX="387.0" layoutY="256.0" mnemonicParsing="false" onAction="#Limpiar" text="Limpiar" />
+      <Button fx:id="bttGuardar" layoutX="479.0" layoutY="256.0" mnemonicParsing="false" onAction="#Guardar" text="Guardar" />
+      <TableView fx:id="tbvwCitas" layoutX="39.0" layoutY="306.0" onMousePressed="#Cancelar" prefHeight="160.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="columnaCodigo" prefWidth="93.0" text="Codigo" />
+          <TableColumn fx:id="columnaNombrePaciente" prefWidth="155.0" text="Nombre del Paciente" />
+            <TableColumn fx:id="columnaMedico" prefWidth="94.0" text="Medico" />
+            <TableColumn fx:id="columnaEspecialidad" prefWidth="95.0" text="Especialidad" />
+            <TableColumn fx:id="columnafecha" prefWidth="68.0" text="Fecha" />
+            <TableColumn fx:id="columnaHora" prefWidth="77.0" text="Hora" />
+            <TableColumn fx:id="columnaEstado" prefWidth="117.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblPreviamenteRegistradas" layoutX="40.0" layoutY="289.0" text="Citas previamente registradas" />
+      <Button fx:id="bttCargar" layoutX="570.0" layoutY="256.0" mnemonicParsing="false" onAction="#Cargar" text="Cargar" />
+      <Label fx:id="lblFecha" layoutX="471.0" layoutY="189.0" text="Fecha" />
+      <DatePicker fx:id="dtpckrFecha" layoutX="398.0" layoutY="208.0" />
+      <Label fx:id="lblmensaje" alignment="CENTER" contentDisplay="CENTER" layoutY="51.0" prefHeight="17.0" prefWidth="774.0" text="Esperando accion..." />
+   </children>
+</AnchorPane>
